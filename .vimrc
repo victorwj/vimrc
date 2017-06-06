@@ -23,7 +23,7 @@ set background=dark
 colorscheme solarized8_dark_low
 let python_highlight_all = 1
 
-set splitbelow              
+set splitbelow              " splits right and below
 set splitright
 set encoding=utf-8          
 set laststatus=2            " powerline always on
@@ -37,11 +37,11 @@ set showmatch				" match parentheses
 set incsearch               " search as typing
 set hlsearch                " highlight search
 
-noremap <Up> 5k
+noremap <Up> 5k             " up and down arrow moves 5 lines
 noremap <Down> 5j
 nnoremap <C-J> <C-W><C-J>   " switch panes with CTRL+HJKL
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <C-H> <C-W><C-H> 
 
 " font: sudo apt-get install fonts-inconsolata
