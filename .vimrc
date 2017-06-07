@@ -13,6 +13,7 @@ Plugin 'lifepillar/vim-solarized8'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Bundle 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -43,5 +44,9 @@ nnoremap <C-J> <C-W><C-J>   " switch panes with CTRL+HJKL
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H> 
+"Remove all trailing whitespace by pressing F5
+nnoremap <F5> :%s/\s\+$//e <CR>
+
+let g:ycm_autoclose_preview_window_after_completion = 1  
 
 " font: sudo apt-get install fonts-inconsolata
