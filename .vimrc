@@ -24,9 +24,9 @@ set background=dark
 colorscheme solarized8_dark_low
 let python_highlight_all = 1
 
+set encoding=utf-8          
 set splitbelow              " splits right and below
 set splitright
-set encoding=utf-8          
 set laststatus=2            " powerline always on
 set tabstop=4				" number of spaces per TAB
 set softtabstop=4			" number of spaces per TAB when editing
@@ -38,10 +38,11 @@ set showmatch				" match parentheses
 set incsearch               " search as typing
 set hlsearch                " highlight search
 
-noremap <Up> 5k             " up and down arrow moves 5 lines
-noremap <Down> 5j
 nnoremap <C-J> <C-W><C-J>   " switch panes with CTRL+HJKL
 nnoremap <C-K> <C-W><C-K>
+set encoding=utf-8          
+set encoding=utf-8          
+set encoding=utf-8          
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H> 
 "Remove all trailing whitespace by pressing F5
