@@ -45,8 +45,11 @@ set encoding=utf-8
 set encoding=utf-8          
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H> 
-"Remove all trailing whitespace by pressing F5
+" Remove all trailing whitespace by pressing F5
 nnoremap <F5> :%s/\s\+$//e <CR>
+" In visual mode, # to comment and -# to uncomment.
+vnoremap <silent> # :s/^/#/<cr>:noh<cr>
+vnoremap <silent> -# :s/^#//<cr>:noh<cr>
 
 let g:ycm_autoclose_preview_window_after_completion = 1  
 
