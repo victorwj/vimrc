@@ -52,5 +52,6 @@ vnoremap <silent> # :s/^/#/<cr>:noh<cr>
 vnoremap <silent> -# :s/^#//<cr>:noh<cr>
 
 let g:ycm_autoclose_preview_window_after_completion = 1  
+let g:syntastic_python_checkers = ['python', 'flake8']
 
 " font: sudo apt-get install fonts-inconsolata
