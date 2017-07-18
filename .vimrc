@@ -28,28 +28,28 @@ set encoding=utf-8
 set splitbelow              " splits right and below
 set splitright
 set laststatus=2            " powerline always on
-set tabstop=4				" number of spaces per TAB
-set softtabstop=4			" number of spaces per TAB when editing
-set expandtab				" TABs are spaces
-set number					" show line number
+set tabstop=4               " number of spaces per TAB
+set softtabstop=4           " number of spaces per TAB when editing
+set expandtab               " TABs are spaces
+set number                  " show line number
 set ruler                   " show col/row
-set cursorline				" highlight current line
-set showmatch				" match parentheses
+set cursorline              " highlight current line
+set showmatch               " match parentheses
 set incsearch               " search as typing
 set hlsearch                " highlight search
 
 nnoremap <C-J> <C-W><C-J>   " switch panes with CTRL+HJKL
 nnoremap <C-K> <C-W><C-K>
-set encoding=utf-8          
-set encoding=utf-8          
-set encoding=utf-8          
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H> 
 " Remove all trailing whitespace by pressing F5
 nnoremap <F5> :%s/\s\+$//e <CR>
-" In visual mode, # to comment and -# to uncomment.
+" In visual mode, # to comment and -# to uncomment
 vnoremap <silent> # :s/^/#/<cr>:noh<cr>
 vnoremap <silent> -# :s/^#//<cr>:noh<cr>
+" Copy and paste from system clipboard
+vnoremap <C-I> "+y
+nnoremap <C-O> "+p
 
 let g:ycm_autoclose_preview_window_after_completion = 1  
 let g:syntastic_python_checkers = ['python', 'flake8']
