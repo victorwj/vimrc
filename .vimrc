@@ -56,4 +56,6 @@ nmap <CR> o<Esc>
 let g:ycm_autoclose_preview_window_after_completion = 1  
 let g:syntastic_python_checkers = ['python', 'flake8']
 
+:command Diff w !diff % -
+
 " font: sudo apt-get install fonts-inconsolata
