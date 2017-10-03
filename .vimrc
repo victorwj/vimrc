@@ -1,17 +1,17 @@
-set nocompatible              " required
-filetype off                  " required
+set nocompatible                            " required
+filetype off                                " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'              " required
-Plugin 'dikiaap/minimalist'             " colorscheme
-Plugin 'ctrlpvim/ctrlp.vim'             " fuzzy search
-Plugin 'Valloric/YouCompleteMe'         " fuzzy complete, need setup
-Plugin 'vim-syntastic/syntastic.git'    " syntax checking 
+Plugin 'gmarik/Vundle.vim'                  " required
+Plugin 'dikiaap/minimalist'                 " colorscheme
+Plugin 'ctrlpvim/ctrlp.vim'                 " fuzzy search
+Plugin 'Valloric/YouCompleteMe'             " fuzzy complete, need setup
+Plugin 'vim-syntastic/syntastic.git'        " syntax checking
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()                           " required
+filetype plugin indent on                   " required
 
 syntax enable
 set t_Co=256
@@ -26,18 +26,18 @@ highlight CursorLine ctermbg=235
 highlight Search ctermbg=75 ctermfg=0 cterm=NONE
 
 set encoding=utf-8
-set splitright				" vertical splits right
-set splitbelow              " horizontal splits below
-set shiftwidth=4            " >> set to 4 spaces
-set tabstop=4               " number of spaces per TAB
-set softtabstop=4           " number of spaces per TAB when editing
-set expandtab               " TABs are spaces
-set number                  " show line number
-set ruler                   " show col/row
-set cursorline              " highlight current line
-set showmatch               " match parentheses
-set incsearch               " search as typing
-set hlsearch                " highlight search
+set splitright                              " vertical splits right
+set splitbelow                              " horizontal splits below
+set shiftwidth=4                            " >> set to 4 spaces
+set tabstop=4                               " number of spaces per TAB
+set softtabstop=4                           " number of spaces per TAB when editing
+set expandtab                               " TABs are spaces
+set number                                  " show line number
+set ruler                                   " show col/row
+set cursorline                              " highlight current line
+set showmatch                               " match parentheses
+set incsearch                               " search as typing
+set hlsearch                                " highlight search
 
 " Shortcut to move between split panes
 nnoremap <C-J> <C-W><C-J>
