@@ -1,3 +1,5 @@
+##### Default Settings #####
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -112,6 +114,18 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+##### Custom Settings #####
+
+export EDITOR=vim
+set -o vi
+export HISTIGNORE="ls:cd:pwd:clear"       # Ignore these commands in history
+export HISTCONTROL="ignoredups"           # Ignore duplicates in history
+
+alias cdd="cd .."
+alias cdd2="cd ../../"
+alias cdd3="cd ../../../"
+alias cls="clear && ls"
 
 # Get return code if nonzero
 function nonzero_return() {
