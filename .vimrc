@@ -60,3 +60,5 @@ set pastetoggle=<C-S-V>
 nmap <CR> o<Esc>
 " Diff between current and last saved
 :command Diff w !diff % -
+" Hotkey to fix vim syntax highlighting errors
+:command Synfix :syntax sync fromstart
