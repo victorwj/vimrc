@@ -48,7 +48,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 " Remove all trailing whitespace by pressing F5
-nnoremap <F5> :%s/\s\+$//e <CR>
+nnoremap <F5> :%s/\s\+$//e<CR>
 " In visual mode, # to comment and -# to uncomment
 vnoremap <silent> # :s/^/#/<CR>:noh<CR>
 vnoremap <silent> -# :s/^#//<CR>:noh<CR>
@@ -56,7 +56,11 @@ vnoremap <silent> -# :s/^#//<CR>:noh<CR>
 " Need +clipboard in vim, install vim-gtk or vim-gnome
 vnoremap <C-I> "*y
 nnoremap <C-O> "*p
-set pastetoggle=<C-S-V>
+" In normal mode, control-v to enter insert pasting mode
+set pastetoggle=<C-V>
+nnoremap <C-V> :set paste<CR>i
+" After pasting, control-v twice to exit insert pasting mode
+inoremap <C-V> <Esc>
 " Add newline using Enter
 nmap <CR> o<Esc>
 " Diff between current and last saved
