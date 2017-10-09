@@ -27,6 +27,7 @@ highlight Search ctermbg=75 ctermfg=0 cterm=NONE
 " Comment color
 highlight Comment ctermfg=244
 
+set fileformat=unix
 set encoding=utf-8
 set splitright                              " vertical splits right
 set splitbelow                              " horizontal splits below
