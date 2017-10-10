@@ -140,7 +140,7 @@ function nonzero_return() {
 
 # Terminal prompt setup
 # Wrap colors around \[ \] for proper terminal wrapping
-export PS1="\[\e[90m\]\u@\h\[\e[0m\] \w \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "
-alias miniprompt='export PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "'
-alias regprompt='export PS1="\[\e[90m\]\u@\h\[\e[0m\] \w \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "'
-
+PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[90m\w\] \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "
+export PS1=$PS1
+alias mini='export PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "'
+alias sbash='source ~/.bashrc'
