@@ -67,3 +67,7 @@ nmap <CR> o<Esc>
 :command Diff w !diff % -
 " Hotkey to fix vim syntax highlighting errors
 :command Synfix :syntax sync fromstart
+
+" Syntastic
+let g:syntastic_python_checkers = ['python', 'flake8', 'pylint', 'pydocstyle', 'pycodestyle']
+let g:syntastic_javascript_checkers = ['ESLint']
