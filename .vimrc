@@ -7,7 +7,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'                  " required
 Plugin 'dikiaap/minimalist'                 " colorscheme
 Plugin 'ctrlpvim/ctrlp.vim'                 " fuzzy search
-Plugin 'Valloric/YouCompleteMe'             " fuzzy complete, need setup
+"Plugin 'Valloric/YouCompleteMe'             " fuzzy complete, need setup
 Plugin 'vim-syntastic/syntastic.git'        " syntax checking
 
 call vundle#end()                           " required
@@ -71,3 +71,4 @@ nmap <CR> o<Esc>
 " Syntastic
 let g:syntastic_python_checkers = ['python', 'flake8', 'pylint', 'pydocstyle', 'pycodestyle']
 let g:syntastic_javascript_checkers = ['ESLint']
+let g:syntastic_cpp_checkers = ['cppcheck', 'cpplint']
