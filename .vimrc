@@ -72,3 +72,5 @@ nmap <CR> o<Esc>
 let g:syntastic_python_checkers = ['python', 'flake8', 'pylint', 'pydocstyle', 'pycodestyle']
 let g:syntastic_javascript_checkers = ['ESLint']
 let g:syntastic_cpp_checkers = ['cppcheck', 'cpplint']
+let g:syntastic_css_checkers = ['csslint']
+let g:syntastic_html_checkers = ['tidy']
