@@ -10,6 +10,7 @@ Plugin 'ctrlpvim/ctrlp.vim'                 " fuzzy search
 "Plugin 'Valloric/YouCompleteMe'             " fuzzy complete, need setup
 Plugin 'vim-syntastic/syntastic.git'        " syntax checking
 Plugin 'tpope/vim-commentary.git'           " easy commenting
+Plugin 'jiangmiao/auto-pairs'               " pairing of brackets, etc
 
 call vundle#end()                           " required
 filetype plugin indent on                   " required
@@ -29,6 +30,7 @@ highlight Search ctermbg=75 ctermfg=0 cterm=NONE
 highlight Comment ctermfg=244
 
 set fileformat=unix
+set fileformats=unix,dos                    " for Windows, :help fileformats
 set encoding=utf-8
 set splitright                              " vertical splits right
 set splitbelow                              " horizontal splits below
