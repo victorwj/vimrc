@@ -9,6 +9,7 @@ Plugin 'dikiaap/minimalist'                 " colorscheme
 Plugin 'ctrlpvim/ctrlp.vim'                 " fuzzy search
 "Plugin 'Valloric/YouCompleteMe'             " fuzzy complete, need setup
 Plugin 'vim-syntastic/syntastic.git'        " syntax checking
+Plugin 'tpope/vim-commentary.git'           " easy commenting
 
 call vundle#end()                           " required
 filetype plugin indent on                   " required
@@ -49,9 +50,6 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 " Remove all trailing whitespace by pressing F5
 nnoremap <F5> :%s/\s\+$//e<CR>
-" In visual mode, # to comment and -# to uncomment
-vnoremap <silent> # :s/^/#/<CR>:noh<CR>
-vnoremap <silent> -# :s/^#//<CR>:noh<CR>
 " Copy and paste from system clipboard
 " Need +clipboard in vim, install vim-gtk or vim-gnome
 vnoremap <C-I> "*y
