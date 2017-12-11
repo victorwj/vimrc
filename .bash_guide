@@ -1,0 +1,12 @@
+# Tarfiles
+tar -zxvf extract_file.tar.gz
+tar -czvf compress_file.tar.gz /path/to/file
+
+# Enter/exit root mode
+sudo -s
+exit
+
+# Manage processes
+ps aux 
+kill -9 PID
+pkill PID
