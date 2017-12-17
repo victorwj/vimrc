@@ -69,7 +69,7 @@ nmap <CR> o<Esc>
 :command Synfix :syntax sync fromstart
 
 " Syntastic
-let g:syntastic_python_checkers = ['python', 'pylint', 'pydocstyle', 'pycodestyle']
+let g:syntastic_python_checkers = ['python']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_cpp_checkers = ['cppcheck', 'cpplint']
 let g:syntastic_css_checkers = ['csslint']

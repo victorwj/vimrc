@@ -10,3 +10,7 @@ exit
 ps aux 
 kill -9 PID
 pkill PID
+
+# System cleanup
+sudo apt-get autoremove # Remove unneeded packages
+sudo apt-get clean # Clean package cache
