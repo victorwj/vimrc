@@ -14,3 +14,9 @@ pkill PID
 # System cleanup
 sudo apt-get autoremove # Remove unneeded packages
 sudo apt-get clean # Clean package cache
+
+# Permissions
+# - rwx r-- r-x
+# type owner group everyone
+chmod +rwx file/dir
+chmod -rwx file/dir
