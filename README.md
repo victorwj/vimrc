@@ -1,7 +1,17 @@
-Setup:
+## Dotfiles Setup
 
-1. Clone dotfiles to ~
-2. Install Vundle for vim 
+- Clone dotfiles to `~/`
+
+- Install Vundle using:
+ 
+```
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-Run vim, type :PluginInstall
-3. source ~/.bashrc
+```
+
+- Run vim and `:PluginInstall`
+
+- Source bashrc using `source ~/.bashrc`
+
+- Change default background to `20/20/20`
+
+- Change default foreground to `255/255/255`
