@@ -1,0 +1,14 @@
+[user]
+	name = Victor Ongkowijaya
+	email = victorwj@umich.edu
+[credential]
+    helper = cache --timeout=7200
+[core]
+    editor = vim
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
