@@ -1,5 +1,5 @@
-#module load gcc/5.1.0
-#module load python/3.4
+# module load gcc/5.1.0
+# module load python/3.4
 
 # Use vim
 export EDITOR=vim
