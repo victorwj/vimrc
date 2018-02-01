@@ -11,6 +11,7 @@ Plugin 'ctrlpvim/ctrlp.vim'                 " fuzzy search
 Plugin 'vim-syntastic/syntastic.git'        " syntax checking
 Plugin 'tpope/vim-commentary.git'           " easy commenting
 Plugin 'jiangmiao/auto-pairs'               " pairing of brackets, etc
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 call vundle#end()                           " required
 filetype plugin indent on                   " required

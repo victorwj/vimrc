@@ -20,3 +20,6 @@ sudo apt-get clean # Clean package cache
 # type owner group everyone
 chmod +rwx file/dir
 chmod -rwx file/dir
+
+# Generate SSH
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
