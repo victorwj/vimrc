@@ -14,18 +14,17 @@ export HISTCONTROL="ignoreboth"
 export HISTIGNORE="ls:cd:pwd:clear:cdd:cdd2:cls"
 export HISTSIZE=1000
 export HISTFILESIZE=2000
-
 # Append to history, not overwrite
 shopt -s histappend
+
 # Update window size after each command
 shopt -s checkwinsize
 
 # Color support for aliases
 if [ -x /usr/bin/dircolors ]; then
+    # If dircolors defined, run it
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
@@ -55,4 +54,4 @@ function nonzero_return() {
 PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[90m\]\w \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "
 export PS1=$PS1
 alias mini='export PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "'
-alias sbash='source ~/.bashrc'
+alias sbash='source ~/.bash_profile'

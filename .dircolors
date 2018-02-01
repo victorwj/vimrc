@@ -1,17 +1,10 @@
-# Victor Ongkowijaya
-#
-# Original LS_COLORS from:
-# Maintainers: Magnus Woldrich <m@japh.se>,
-#              Ryan Delaney <ryan.delaney@gmail.com> OpenGPG: 0D98863B4E1D07B6
-#         URL: https://github.com/trapd00r/LS_COLORS
-#     Version: 0.254
-#     Updated: Tue Mar 29 21:25:30 AEST 2016
+# https://github.com/trapd00r/LS_COLORS
 
+# custom
+.exe                  01;32 
 # core
 NORMAL                38;5;68
-FILE                  0
-EXEC                  0
-RESET                 0
+FILE                  00
 DIR                   48;5;235;38;5;30
 OTHER_WRITABLE        48;5;235;38;5;30 # dir in windows
 SETUID                48;5;160;38;5;230 # file that is setuid (u+s)
@@ -26,13 +19,6 @@ ORPHAN                48;5;196;38;5;232;1
 SOCK                  38;5;197
 STICKY                38;5;86;48;5;234
 STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
-#CAPABILITY            38;5;17
-#DIR                   38;5;30
-#EXEC                  38;5;208;1
-#OTHER_WRITABLE        38;5;220;1
-#SETGID                48;5;3;38;5;0
-#SETUID                38;5;220;1;3;100;1
-#*LS_COLORS 48;5;89;38;5;197;1;3;4;7 # :-)
 # documents
 *README               38;5;220;1
 *README.rst           38;5;220;1
@@ -249,7 +235,7 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .rmvb                 38;5;114
 .sample               38;5;114
 .wmv                  38;5;114
-  # mobile/streaming
+# mobile/streaming
 .3g2                  38;5;115
 .3gp                  38;5;115
 .gp3                  38;5;115
@@ -508,9 +494,9 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .vcard                38;5;7
 .vcf                  38;5;7
 .xln                  38;5;7
-#   AppCode files
+# appcode
 .iml                  38;5;166
-#   Xcode files
+# xcode
 .xcconfig             1
 .entitlements         1
 .strings              1
@@ -568,5 +554,3 @@ TERM xterm-256color
 TERM xterm-88color
 TERM xterm-color
 TERM xterm-debian
-
-# vim: ft=dircolors:fdm=marker:et:sw=2:
