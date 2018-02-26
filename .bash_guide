@@ -26,3 +26,8 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 # Folder size
 du -sh dir
+
+# Send to remote
+scp /file/to/send username@remote:/path/receive
+# Receive from remote
+scp username@remote:/file/to/send /path/receive
