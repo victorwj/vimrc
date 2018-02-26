@@ -79,7 +79,7 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .pptxm                38;5;166;4
 .pptsm                38;5;166;4
 # spreadsheet
-.csv                  38;5;78
+.csv                  38;5;73
 .ods                  38;5;112
 .xla                  38;5;76
 .xls                  38;5;112
