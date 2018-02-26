@@ -30,4 +30,9 @@ du -sh dir
 # Send to remote
 scp /file/to/send username@remote:/path/receive
 # Receive from remote
+
+# Python env
+python -m virtualenv env
+source env/bin/activate
+deactivate
 scp username@remote:/file/to/send /path/receive
