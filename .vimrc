@@ -28,7 +28,7 @@ highlight CursorLine ctermbg=235
 " Search highlight color, no underline
 highlight Search ctermbg=75 ctermfg=0 cterm=NONE
 " Comment color
-highlight Comment ctermfg=244
+highlight Comment ctermfg=100
 
 set fileformat=unix
 set fileformats=unix,dos                    " for Windows, :help fileformats
