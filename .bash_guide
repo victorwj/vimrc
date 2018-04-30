@@ -18,8 +18,14 @@ sudo apt-get clean # Clean package cache
 # Permissions
 # - rwx r-- r-x
 # type owner group everyone
-chmod +rwx file/dir
-chmod -rwx file/dir
+chmod +rwx /path/to/file
+chmod -rwx /path/to/file
 
 # Generate SSH
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+# List packages
+apt --installed list
+
+# "Live" view of a file
+tail -f /path/to/file
