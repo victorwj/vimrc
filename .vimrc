@@ -29,6 +29,12 @@ highlight CursorLine ctermbg=235
 highlight Search ctermbg=75 ctermfg=0 cterm=NONE
 " Comment color
 highlight Comment ctermfg=100
+" Spell check unrecognized word
+highlight clear SpellBad
+highlight SpellBad ctermbg=88
+highlight clear SpellCap
+highlight clear SpellRare
+highlight clear SpellLocal
 
 set fileformat=unix
 set fileformats=unix,dos                    " for Windows, :help fileformats
@@ -75,3 +81,9 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_cpp_checkers = ['cppcheck', 'cpplint']
 let g:syntastic_css_checkers = ['csslint']
 let g:syntastic_html_checkers = ['tidy']
+let g:syntastic_tex_checkers = ['']
+
+" File specific settings
+" For tex files, enable text wrapping at 80 chars, enable spell check
+" Use zg to add words to the spellfile
+autocmd FileType tex setlocal textwidth=80 spell spelllang=en_us
