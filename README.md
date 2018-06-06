@@ -10,6 +10,8 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 - Run vim and `:PluginInstall`
 
+- For Go support, run `:GoInstallBinaries`
+
 - Source bashrc using `source ~/.bashrc`
 
 - Change default background to `20/20/20`

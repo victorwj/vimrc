@@ -12,6 +12,7 @@ Plugin 'vim-syntastic/syntastic.git'        " syntax checking
 Plugin 'tpope/vim-commentary.git'           " easy commenting
 Plugin 'jiangmiao/auto-pairs'               " pairing of brackets, etc
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'fatih/vim-go'                       " support for Go
 
 call vundle#end()                           " required
 filetype plugin indent on                   " required
@@ -82,6 +83,9 @@ let g:syntastic_cpp_checkers = ['cppcheck', 'cpplint']
 let g:syntastic_css_checkers = ['csslint']
 let g:syntastic_html_checkers = ['tidy']
 let g:syntastic_tex_checkers = ['']
+let g:syntastic_go_checkers = ['go']
+
+let g:go_version_warning = 0
 
 " File specific settings
 " For tex files, enable text wrapping at 80 chars, enable spell check
