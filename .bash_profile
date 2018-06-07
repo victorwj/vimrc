@@ -42,5 +42,5 @@ function nonzero_return() {
 
 # Terminal prompt setup
 # Wrap colors around \[ \] for proper terminal wrapping
-PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[90m\]\w \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "
+PS1="\[\e[90m\]\u\[\e[32m\]@\h\[\e[0m\] \[\e[90m\]\w \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "
 export PS1=$PS1
