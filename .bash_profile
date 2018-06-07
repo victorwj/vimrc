@@ -1,6 +1,3 @@
-# module load gcc/5.1.0
-# module load python/3.4
-
 # Use vim
 export EDITOR=vim
 set -o vi
@@ -11,7 +8,7 @@ stty -ixon
 # No duplicate lines or lines starting with space in history
 export HISTCONTROL="ignoreboth"
 # Ignore these commands in history
-export HISTIGNORE="ls:cd:pwd:clear:cdd:cdd2:cls"
+export HISTIGNORE="ls:cd:pwd:clear:cdd:b"
 export HISTSIZE=1000
 export HISTFILESIZE=2000
 # Append to history, not overwrite
@@ -35,12 +32,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# General aliases
-alias cdd="cd .."
-alias cdd2="cd ../../"
-alias cls="clear && ls"
-alias b="cd -"
-
 # Get return code if nonzero
 function nonzero_return() {
 	RETVAL=$?
@@ -53,5 +44,3 @@ function nonzero_return() {
 # Wrap colors around \[ \] for proper terminal wrapping
 PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[90m\]\w \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "
 export PS1=$PS1
-# Mini prompt alias
-alias miniprompt='export PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "'
