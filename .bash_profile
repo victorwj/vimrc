@@ -53,5 +53,5 @@ function nonzero_return() {
 # Wrap colors around \[ \] for proper terminal wrapping
 PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[90m\]\w \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "
 export PS1=$PS1
-alias mini='export PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "'
-alias sbash='source ~/.bash_profile'
+# Mini prompt alias
+alias miniprompt='export PS1="\[\e[90m\]\u@\h\[\e[0m\] \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "'
