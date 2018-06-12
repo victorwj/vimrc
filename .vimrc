@@ -91,3 +91,5 @@ let g:go_version_warning = 0
 " For tex files, enable text wrapping at 80 chars, enable spell check
 " Use zg to add words to the spellfile
 autocmd FileType tex setlocal textwidth=80 spell spelllang=en_us
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType sh setlocal shiftwidth=2 tabstop=2 softtabstop=2
