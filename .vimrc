@@ -7,12 +7,13 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'                  " required
 Plugin 'dikiaap/minimalist'                 " colorscheme
 Plugin 'ctrlpvim/ctrlp.vim'                 " fuzzy search
-"Plugin 'Valloric/YouCompleteMe'             " fuzzy complete, need setup
+Plugin 'valloric/YouCompleteMe'             " fuzzy complete, need setup
 Plugin 'vim-syntastic/syntastic.git'        " syntax checking
 Plugin 'tpope/vim-commentary.git'           " easy commenting
 Plugin 'jiangmiao/auto-pairs'               " pairing of brackets, etc
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'fatih/vim-go'                       " support for Go
+" Plugin 'octol/vim-cpp-enhanced-highlight'
+" Plugin 'fatih/vim-go'                       " support for Go
+Plugin 'junegunn/goyo.vim'                  " no-distraction mode
 
 call vundle#end()                           " required
 filetype plugin indent on                   " required
@@ -84,8 +85,8 @@ let g:syntastic_css_checkers = ['csslint']
 let g:syntastic_html_checkers = ['tidy']
 let g:syntastic_tex_checkers = ['']
 let g:syntastic_go_checkers = ['go']
-
 let g:go_version_warning = 0
+let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
 
 " File specific settings
 " For tex files, enable text wrapping at 80 chars, enable spell check
