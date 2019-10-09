@@ -14,6 +14,7 @@ Plugin 'jiangmiao/auto-pairs'               " pairing of brackets, etc
 " Plugin 'octol/vim-cpp-enhanced-highlight'
 " Plugin 'fatih/vim-go'                       " support for Go
 Plugin 'junegunn/goyo.vim'                  " no-distraction mode
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()                           " required
 filetype plugin indent on                   " required
