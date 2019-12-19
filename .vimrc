@@ -84,11 +84,11 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_cpp_checkers = ['cppcheck', 'cpplint']
 let g:syntastic_css_checkers = ['csslint']
 let g:syntastic_html_checkers = ['tidy']
-let g:syntastic_tex_checkers = ['']
-let g:syntastic_go_checkers = ['']
-let g:go_version_warning = 0
-let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
+let g:syntastic_go_checkers = ['go']
 let g:syntastic_disabled_filetypes = ['md']
+
+" Go
+let g:go_fmt_command = "goimports"
 
 " File specific settings
 " For tex files, enable text wrapping at 80 chars, enable spell check
