@@ -57,7 +57,7 @@ export PATH="$PATH:$HOME/.gems/bin"
 # Go
 export PATH="$PATH:/usr/local/go/bin"
 export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH"
+export PATH="$PATH:$GOPATH/bin"
 
 # Autojump
 [[ -s /home/victwj/.autojump/etc/profile.d/autojump.sh ]] && source /home/victwj/.autojump/etc/profile.d/autojump.sh
