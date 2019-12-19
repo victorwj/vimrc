@@ -19,3 +19,12 @@ python3 install.py --clang-completer
 - Source bashrc using `source ~/.bashrc`
 
 - For Go support, run `:GoInstallBinaries`
+
+- Install autojump:
+
+```
+git clone git://github.com/wting/autojump.git
+cd autojump
+./install.py or ./uninstall.py
+# Follow on screen instructions
+```

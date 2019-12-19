@@ -1,11 +1,4 @@
-# Ruby
-export GEM_HOME="$HOME/.gems"
-export PATH="$PATH:$HOME/.gems/bin"
-
-# Go
-export PATH="$PATH:/usr/local/go/bin"
-export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH"
+########## Core
 
 # Use vim
 export EDITOR=vim
@@ -54,3 +47,17 @@ function nonzero_return() {
 # Wrap colors around \[ \] for proper terminal wrapping
 PS1="\[\e[90m\]\u\[\e[32m\]@\h\[\e[0m\] \[\e[90m\]\w \[\e[91m\]\`nonzero_return\`\[\e[0m\]$ "
 export PS1=$PS1
+
+########## Situational
+
+# Ruby
+export GEM_HOME="$HOME/.gems"
+export PATH="$PATH:$HOME/.gems/bin"
+
+# Go
+export PATH="$PATH:/usr/local/go/bin"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH"
+
+# Autojump
+[[ -s /home/victwj/.autojump/etc/profile.d/autojump.sh ]] && source /home/victwj/.autojump/etc/profile.d/autojump.sh
