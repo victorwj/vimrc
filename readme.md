@@ -18,6 +18,4 @@ python3 install.py --clang-completer
 
 - Source bashrc using `source ~/.bashrc`
 
-- (Optional) Change default background to `20/20/20`
-
-- (Optional) Change default foreground to `255/255/255`
+- For Go support, run `:GoInstallBinaries`

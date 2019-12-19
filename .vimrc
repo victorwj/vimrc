@@ -12,7 +12,7 @@ Plugin 'vim-syntastic/syntastic.git'        " syntax checking
 Plugin 'tpope/vim-commentary.git'           " easy commenting
 Plugin 'jiangmiao/auto-pairs'               " pairing of brackets, etc
 " Plugin 'octol/vim-cpp-enhanced-highlight'
-" Plugin 'fatih/vim-go'                       " support for Go
+Plugin 'fatih/vim-go'                       " support for Go
 Plugin 'junegunn/goyo.vim'                  " no-distraction mode
 Plugin 'christoomey/vim-tmux-navigator'
 
@@ -79,15 +79,16 @@ nmap <CR> o<Esc>
 :command Synfix :syntax sync fromstart
 
 " Syntastic
-let g:syntastic_python_checkers = ['python']
+let g:syntastic_python_checkers = ['python3']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_cpp_checkers = ['cppcheck', 'cpplint']
 let g:syntastic_css_checkers = ['csslint']
 let g:syntastic_html_checkers = ['tidy']
 let g:syntastic_tex_checkers = ['']
-let g:syntastic_go_checkers = ['go']
+let g:syntastic_go_checkers = ['']
 let g:go_version_warning = 0
 let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
+let g:syntastic_disabled_filetypes = ['md']
 
 " File specific settings
 " For tex files, enable text wrapping at 80 chars, enable spell check
