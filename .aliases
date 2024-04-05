@@ -1,0 +1,98 @@
+#### Basic ####
+
+alias b="cd - > /dev/null"
+alias cdd="cd .."
+alias cddd="cd ../.."
+alias ll="ls -lhA"
+alias l="ls -lhA"
+alias ffile="find . -name"
+alias fhist="history | grep"
+alias gamend="git add -u && git commit --amend --no-edit"
+
+#### Square ####
+
+REPO="/Users/vongkowijaya/Development/android-register"
+X2_RST=":apps:x2-restaurants:app"
+T2_RST=":apps:t2-restaurants:app"
+X2_SPOS=":apps:x2-spos:app"
+T2_SPOS=":apps:t2-spos:app"
+
+UI_TEST="com.squareup.instrumentation.tests.x2.rst.X2RstPredefinedOrdersTest"
+UNIT_TEST=":common:open-orders:core:internal"
+
+function update () {
+  brew update && brew upgrade
+  sq update
+  ~/Development/topsoil/compost mobile
+  ${REPO}/sa-toolbox setup jdk
+  ${REPO}/sa-toolbox setup gradle
+}
+
+function installApp () {
+  gw $1:installDebug && adb shell am start com.squareup.signin
+}
+
+function installAppRerun () {
+  gw $1:installDebug --rerun-tasks --no-configuration-cache && adb shell am start com.squareup.siginin
+}
+
+function adbClear () {
+  local emulator="${1:-emulator-5554}"
+  local app="${2:-com.squareup.restaurants}"
+  echo "adb -s $emulator shell pm clear $app"
+  adb -s $emulator shell pm clear $app
+}
+
+function adbInstall () {
+  local emulator="${1:-emulator-5554}"
+  local target="${2:-x2-restaurants}"
+  local apkPath="/Users/vongkowijaya/Development/android-register/apps/${target}/app/build/outputs/apk/debug/app-universal-debug.apk"
+  echo "adb -s $emulator install $apkPath"
+  adb -s $emulator install $apkPath
+}
+
+function adbUninstall () {
+  local emulator="${1:-emulator-5554}"
+  local app="${2:-com.squareup.restaurants}"
+  echo "adb -s $emulator uninstall $app"
+  adb -s $emulator uninstall $app
+}
+
+
+function checkAll () {
+  ./scripts/gradlew-changed.sh ktlintFormat 
+  ./scripts/gradlew-changed.sh detekt 
+  ./scripts/gradlew-changed.sh test
+}
+
+function uiTest() {
+  local test="${UI_TEST}"
+  [ -z "$1" ] || test+="#$1"
+  gw ${X2_RST}:uiTest --tests ${test} $2
+}
+
+function uiTestSkip() {
+  local test="${UI_TEST}"
+  [ -z "$1" ] || test+="#$1"
+  gw ${X2_RST}:uiTestSkip --tests ${test} $2
+}
+
+function unitTest() {
+  local test="${UNIT_TEST}:testDebugUnitTest"
+  [ -z "$1" ] || test+=".$1"
+  gw ${test} $2
+}
+
+alias gw="${REPO}/gradlew"
+alias release="./scripts/release-memory.sh"
+
+alias setupX2Rst="${REPO}/setupIdeModules ${X2_RST}"
+alias setupT2Rst="${REPO}/setupIdeModules ${T2_RST}"
+
+alias installX2Rst="installApp ${X2_RST}"
+alias installX2RstRerun="installAppRerun ${X2_RST}"
+alias installT2Rst="installApp ${T2_RST}"
+alias installT2RstRerun="installAppRerun ${T2_RST}"
+
+alias lintAll="./scripts/gradlew-changed.sh ktlintFormat"
+alias testAll="./scripts/gradlew-changed.sh test"
